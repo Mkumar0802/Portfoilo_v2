@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className='bg-white text-black'>
+      <body className='bg-white text-custom-text'>
         <header>
           <nav>
             <ul className='flex gap-16 justify-center font-semibold font-sans text-2xl'>
