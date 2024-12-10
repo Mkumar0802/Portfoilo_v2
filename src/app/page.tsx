@@ -223,54 +223,160 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="projects" className="h-screen bg-purple-500">
+      {/* <section id="projects" className="h-screen bg-purple-500">
         <h2>Projects Section</h2>
-      </section>
+      </section> */}
 
       <section id="education" className="h-screen bg-teal-500">
         <h2>Education Section</h2>
+
+        <div className="bg-gray-900 text-gray-100 min-h-screen flex items-center justify-center">
+          <div className="max-w-6xl mx-auto px-6 py-12">
+            <h2 className="text-center text-4xl font-bold text-purple-400 mb-8">
+              Educations
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* Left Side: Illustration */}
+              <div className="flex justify-center">
+                <img
+                  src="/illustration.png"
+                  alt="Education Illustration"
+                  className="max-w-sm md:max-w-md"
+                />
+              </div>
+
+              {/* Right Side: Education Details */}
+              <div className="space-y-6">
+                {/* Single Education Item */}
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                  <p className="text-purple-400 font-bold text-lg">2020 - Present</p>
+                  <h3 className="text-xl font-bold mt-2">Bachelor Degree</h3>
+                  <p className="text-gray-300">
+                    National University of Bangladesh
+                  </p>
+                </div>
+                {/* Single Education Item */}
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                  <p className="text-purple-400 font-bold text-lg">2018 - 2020</p>
+                  <h3 className="text-xl font-bold mt-2">
+                    Higher Secondary Certificate
+                  </h3>
+                  <p className="text-gray-300">
+                    Noakhali Islamia Kamil Madrasah
+                  </p>
+                </div>
+                {/* Single Education Item */}
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                  <p className="text-purple-400 font-bold text-lg">2008 - 2018</p>
+                  <h3 className="text-xl font-bold mt-2">
+                    Secondary School Certificate
+                  </h3>
+                  <p className="text-gray-300">Baitus Saif Islamia Madrasah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="experience" className="h-screen bg-gray-500">
         <h2>Experience Section</h2>
 
-           <div className='flex min-h-screen items-center justify-start'>
-            <div>
-                thus
-            </div>
-            <div>
+        <div className='flex min-h-screen items-center justify-center'>
+
+          <div>
             <div className=" bg-white">
-          <div className="mx-auto w-full max-w-lg">
-            <h1 className="text-4xl font-medium">Contact us</h1>
-            <p className="mt-3">Email us at help@domain.com or message us here:</p>
+              <div className="bg-gray-900 text-gray-100 min-h-screen flex items-center justify-center">
+                <div className="max-w-6xl mx-auto px-6 py-12">
+                  <h2 className="text-center text-4xl font-bold text-green-400 mb-6">
+                    CONTACT WITH ME
+                  </h2>
+                  <p className="text-center text-gray-300 mb-8">
+                    If you have any questions or concerns, please don’t hesitate to contact me.
+                    I am open to any work opportunities that align with my skills and interests.
+                  </p>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    {/* Contact Form */}
+                    <form
+                      action="#"
+                      method="POST"
+                      className="bg-gray-800 p-8 rounded-lg shadow-lg"
+                    >
+                      <div className="mb-4">
+                        <label htmlFor="name" className="block mb-2 font-medium">
+                          Your Name
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          className="w-full p-3 rounded bg-gray-700 focus:ring-2 focus:ring-green-400"
+                        />
+                      </div>
+                      <div className="mb-4">
+                        <label htmlFor="email" className="block mb-2 font-medium">
+                          Your Email
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          className="w-full p-3 rounded bg-gray-700 focus:ring-2 focus:ring-green-400"
+                        />
+                      </div>
+                      <div className="mb-4">
+                        <label htmlFor="message" className="block mb-2 font-medium">
+                          Your Message
+                        </label>
+                        <textarea
+                          id="message"
+                          name="message"
+                          rows="4"
+                          className="w-full p-3 rounded bg-gray-700 focus:ring-2 focus:ring-green-400"
+                        ></textarea>
+                      </div>
+                      <button
+                        type="submit"
+                        className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-lg transition"
+                      >
+                        Send Message
+                      </button>
+                    </form>
 
-            <form action="https://api.web3forms.com/submit" className="mt-10">
-
-
-
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-              <div className="grid gap-6 sm:grid-cols-2">
-                <div className="relative z-0">
-                  <input type="text" name="name" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-                  <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your name</label>
-                </div>
-                <div className="relative z-0">
-                  <input type="text" name="email" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-                  <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your email</label>
-                </div>
-                <div className="relative z-0 col-span-2">
-                  <textarea name="message" rows="5" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
-                  <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your message</label>
+                    {/* Contact Details */}
+                    <div className="flex flex-col justify-center items-start bg-gray-800 p-8 rounded-lg shadow-lg">
+                      <div className="flex items-center mb-4">
+                        <span className="text-green-400 text-xl font-bold mr-4">📧</span>
+                        <p>abusaid7388@gmail.com</p>
+                      </div>
+                      <div className="flex items-center mb-4">
+                        <span className="text-green-400 text-xl font-bold mr-4">📞</span>
+                        <p>+8801608797655</p>
+                      </div>
+                      <div className="flex items-center mb-4">
+                        <span className="text-green-400 text-xl font-bold mr-4">📍</span>
+                        <p>Middle Badda, Dhaka, Bangladesh - 1212</p>
+                      </div>
+                      <div className="flex space-x-4 mt-4">
+                        <a href="#" className="text-gray-300 hover:text-green-400">
+                          GitHub
+                        </a>
+                        <a href="#" className="text-gray-300 hover:text-green-400">
+                          LinkedIn
+                        </a>
+                        <a href="#" className="text-gray-300 hover:text-green-400">
+                          Facebook
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <button type="submit" className="mt-5 rounded-md bg-black px-10 py-2 text-white">Send Message</button>
-            </form>
+            </div>
           </div>
         </div>
-            </div>
-           </div>
 
-       
+
       </section>
     </div>
   );

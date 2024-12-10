@@ -53,7 +53,7 @@ export default function HomePage() {
             </section>
 
             <section id="experience" className="h-screen bg-gray-500">
-                <h2>Experience Section sfsd</h2>
+                <h2>Experience Section</h2>
                 
 
             </section>
