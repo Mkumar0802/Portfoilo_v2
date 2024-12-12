@@ -58,7 +58,7 @@ export default function HomePage() {
                       rel="noopener noreferrer"
                       className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:bg-gray-200"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fillRule="evenodd" d="M1 2.838A1.84 1.84 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.84 1.84 0 0 1 21.161 23H2.838A1.84 1.84 0 0 1 1 21.161zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708zm-5.5 10.403h3.208V9.25H4.208zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0" clip-rule="evenodd" /></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fillRule="evenodd" d="M1 2.838A1.84 1.84 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.84 1.84 0 0 1 21.161 23H2.838A1.84 1.84 0 0 1 1 21.161zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708zm-5.5 10.403h3.208V9.25H4.208zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0" clipRule="evenodd" /></svg>
                     </a>
                     <a
                       href="mailto:example@example.com" // Replace with your email address
@@ -76,7 +76,7 @@ export default function HomePage() {
         </>
       </section>
 
-      <section id="hero" className="">
+      <section id="about" className="">
 
         <div>
           <div className="container bg-gray-200 mx-auto w-full h-full">
@@ -155,11 +155,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="about" className="h-screen bg-red-500">
+      {/* <section id="about" className="h-screen bg-red-500">
         <h2>About Section</h2>
 
 
-      </section>
+      </section> */}
 
       <section id="skills" className="h-screen bg-yellow-500">
         <h2>Skills Section</h2>
@@ -223,9 +223,84 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* <section id="projects" className="h-screen bg-purple-500">
-        <h2>Projects Section</h2>
-      </section> */}
+      <section id="experience" className="h-screen bg-purple-500">
+        <h2>experience Section</h2>
+        <div>
+          <div className="container bg-gray-200 mx-auto w-full h-full">
+            <div className='flex flex-col items-center justify-center bg-gray-50 px-6 py-16"'>
+              {/* Title */}
+              <h3 className="text-lg text-gray-500">Get To Know More</h3>
+              <h1 className="text-4xl font-bold mt-2">About Me</h1>
+            </div>
+            <div className="relative wrap overflow-hidden p-10 h-full">
+              <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style={{ left: '50%' }} ></div>
+
+              <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                <div className="order-1 w-5/12"></div>
+                <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                  <h1 className="mx-auto font-semibold text-lg text-white">1</h1>
+                </div>
+                <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                  {/* Card */}
+                  <div className="mt-8 bg-black text-white rounded-lg p-6 w-80 sm:w-96 shadow-lg">
+                    <h2 className="text-yellow-400 text-lg font-semibold">Education</h2>
+                    <p className="mt-2 text-white text-xl font-medium">Bachelor of Science</p>
+                    <p className="mt-1 text-gray-300">VIT University, Vellore</p>
+                    <p className="mt-4 text-gray-500 text-sm text-right">2020 - 2023</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div className="order-1 w-5/12"></div>
+                <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                  <h1 className="mx-auto text-white font-semibold text-lg">2</h1>
+                </div>
+                <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                  <div className="bg-black text-white rounded-lg p-6 w-80 sm:w-96 shadow-lg">
+                    <h2 className="text-yellow-400 text-lg font-semibold">Education</h2>
+                    <p className="mt-2 text-white text-xl font-medium">Bachelor of Science</p>
+                    <p className="mt-1 text-gray-300">VIT University, Vellore</p>
+                    <p className="mt-4 text-gray-500 text-sm text-right">2020 - 2023</p>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                <div className="order-1 w-5/12"></div>
+                <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                  <h1 className="mx-auto font-semibold text-lg text-white">3</h1>
+                </div>
+                <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                  <h2 className="text-yellow-400 text-lg font-semibold">Work Experience</h2>
+                  <p className="mt-2 text-white text-xl font-medium">Data Analyst</p>
+                  <p className="mt-1 text-gray-300">ABC Company</p>
+                  <p className="mt-4 text-gray-500 text-sm text-right">2023 - Present</p>
+                </div>
+              </div>
+
+
+              <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div className="order-1 w-5/12"></div>
+                <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                  <h1 className="mx-auto text-white font-semibold text-lg">4</h1>
+                </div>
+                <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                  <h2 className="text-yellow-400 text-lg font-semibold">Work Experience</h2>
+                  <p className="mt-2 text-white text-xl font-medium">Data Analyst</p>
+                  <p className="mt-1 text-gray-300">ABC Company</p>
+                  <p className="mt-4 text-gray-500 text-sm text-right">2023 - Present</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="education" className="h-screen bg-teal-500">
         <h2>Education Section</h2>
@@ -279,7 +354,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="experience" className="h-screen bg-gray-500">
+      <section id="contact" className="h-screen bg-gray-500">
         <h2>Experience Section</h2>
 
         <div className='flex min-h-screen items-center justify-center'>
